@@ -1,13 +1,16 @@
 {
-  "name": "python-env-test",
+  "name": "python-in-node",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "activate-py": "source env/bin/activate",
-    "run-python": ". env/bin/activate && node scripts/runPython.js && deactivate"
+    "create-py-env": "python3 -m venv env",
+    "delete-py-env": "rm -r env",
+    "activate-py-env": ". env/bin/activate",
+    "deactivate-py-env": "deactivate",
+    "run-python": "node scripts/runPython.js && deactivate"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,8 @@
   "engines": {
     "node": "16.x",
     "npm": "8.x"
-  }
+  },
+  "os": [
+    "linux"
+  ]
 }
