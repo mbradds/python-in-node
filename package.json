@@ -8,20 +8,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "create-py-env": "python3 -m venv env",
     "delete-py-env": "rm -r env",
-    "activate-py-env": ". env/bin/activate",
-    "deactivate-py-env": "deactivate",
-    "run-python": "node scripts/runPython.js && deactivate"
+    "python-script": ". env/bin/activate && node scripts/runPython.js && deactivate"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbradds/python-env-test.git"
+    "url": "git+https://github.com/mbradds/python-in-node.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mbradds/python-env-test/issues"
+    "url": "https://github.com/mbradds/python-in-node/issues"
   },
-  "homepage": "https://github.com/mbradds/python-env-test#readme",
+  "homepage": "https://github.com/mbradds/python-in-node#readme",
   "engines": {
     "node": "16.x",
     "npm": "8.x"
