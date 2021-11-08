@@ -36,6 +36,6 @@ Deactivate on linux: `deactivate`
 
 Make environment on linix: `python3 -m venv env`
 
-Intall requirements.txt: `pip install -r requirements.txt`
+Intall requirements.txt: `pip3 install -r requirements.txt`
 
 Save requirements.txt: `pip3 freeze > requirements.txt`
